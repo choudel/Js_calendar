@@ -1,0 +1,30 @@
+#app-calendar{
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-color: blanchedalmond;
+    height: 100%;
+    border-left:  solid #333 1px;
+    border-top:  solid #333 1px;
+}
+.day{
+    display: grid;
+    border-bottom: solid #333 1px;
+    border-right: solid #333 1px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 200ms, color 200ms;
+    
+}
+.weekend{
+    color: beige;
+    background-color: brown;
+}
+.name{
+    padding-bottom: 5px;
+}
+.selected{
+    background-color: aquamarine;
+}
