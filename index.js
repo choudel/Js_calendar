@@ -18,7 +18,7 @@ for (let day=1; day<=31 ; day++){
 
 document.querySelectorAll("#app-calendar .day").forEach((day)=>{
     day.addEventListener("click",event =>{
-        event.currentTarget.classList.add("selected");
+        event.currentTarget.classList.toggle("selected");
     })
 })    
 
